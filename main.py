@@ -84,13 +84,12 @@ class State:
 
 
     def move_down_left(self):
-        for i in self.sidefront:
-            var1=self.sidefront[0][0]
-            var2 = self.sidefront[1][0]
-            var3 = self.sidefront[2][0]
 
-        for i in self.sidefront:
-                self.sidefront[i][0]=self.sideup[i][0]
+        var1=self.sidefront[0][0]
+        var2 = self.sidefront[1][0]
+        var3 = self.sidefront[2][0]
+
+
         self.sidedown[0][0],var1=var1,self.sidedown[0][0]
         self.sidedown[1][0], var2 = var2, self.sidedown[1][0]
         self.sidedown[2][0], var3 = var3, self.sidedown[2][0]
@@ -102,6 +101,10 @@ class State:
         self.sideup[0][0], var1 = var1, self.sideup[0][0]
         self.sideup[1][0], var2 = var2, self.sideup[1][0]
         self.sideup[2][0], var3 = var3, self.sideup[2][0]
+
+        self.sidefront[0][0], var1 = var1, self.sidefront[0][0]
+        self.sidefront[1][0], var2 = var2, self.sidefront[1][0]
+        self.sidefront[2][0], var3 = var3, self.sidefront[2][0]
 
         var1=self.sideleft[0][0];
         var2 = self.sideleft[0][1];
