@@ -344,3 +344,31 @@ state1 = State()
 state1.print_()
 state1.move_down_left()
 state1.print_()
+graph = {
+  '5' : ['3','7'],
+  '3' : ['2', '4'],
+  '7' : ['8'],
+  '2' : [],
+  '4' : ['8'],
+  '8' : []
+}
+
+visited = [] # List for visited nodes.
+queue = []     #Initialize a queue
+
+def bfs(visited, graph,state1 ): #function for BFS
+  visited.append(state1)
+  queue.append(state1)
+
+  while queue:          # Creating loop to visit each node
+    m = queue.pop(0)
+
+
+    for neighbour in graph[m]:
+      if neighbour not in visited:
+        visited.append(neighbour)
+        queue.append(neighbour)
+
+# Driver Code
+print("Following is the Breadth-First Search")
+bfs(visited, graph, '5')    # function calling
