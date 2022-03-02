@@ -203,6 +203,48 @@ class State:
         self.sideright[0][1], var2 = var2, self.sideright[0][1];
         self.sideright[0][0], var3 = var3, self.sideright[0][0];
 
+    def move_down_middle(self):
+        var1 = self.sidefront[0][2]
+        var2 = self.sidefront[1][2]
+        var3 = self.sidefront[2][2]
+
+        self.sidedown[0][2], var1 = var1, self.sidedown[0][2]
+        self.sidedown[1][2], var2 = var2, self.sidedown[1][2]
+        self.sidedown[2][2], var3 = var3, self.sidedown[2][2]
+
+        self.sideback[0][2], var1 = var1, self.sideback[0][2]
+        self.sideback[1][2], var2 = var2, self.sideback[1][2]
+        self.sideback[2][2], var3 = var3, self.sideback[2][2]
+
+        self.sideup[0][2], var1 = var1, self.sideup[0][2]
+        self.sideup[1][2], var2 = var2, self.sideup[1][2]
+        self.sideup[2][2], var3 = var3, self.sideup[2][2]
+
+        self.sidefront[0][2], var1 = var1, self.sidefront[0][2]
+        self.sidefront[1][2], var2 = var2, self.sidefront[1][2]
+        self.sidefront[2][2], var3 = var3, self.sidefront[2][2]
+
+        var1 = self.sideright[0][0];
+        var2 = self.sideright[0][1];
+        var3 = self.sideright[0][2];
+
+        self.sideright[2][0], var1 = var1, self.sideright[0][2];
+        self.sideright[1][0], var2 = var2, self.sideright[1][2];
+        self.sideright[0][0], var3 = var3, self.sideright[2][2];
+
+        self.sideright[2][2], var1 = var1, self.sideright[2][2];
+        self.sideright[2][1], var2 = var2, self.sideright[2][1];
+        self.sideright[2][0], var3 = var3, self.sideright[2][0];
+
+        self.sideright[2][2], var1 = var1, self.sideright[2][2];
+        self.sideright[1][2], var2 = var2, self.sideright[1][2];
+        self.sideright[0][2], var3 = var3, self.sideright[0][2];
+
+        self.sideright[0][2], var1 = var1, self.sideright[0][2];
+        self.sideright[0][1], var2 = var2, self.sideright[0][1];
+        self.sideright[0][0], var3 = var3, self.sideright[0][0];
+
+
 state1 = State()
 state1.print_()
 state1.move_down_left()
