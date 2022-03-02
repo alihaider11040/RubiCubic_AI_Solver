@@ -224,25 +224,120 @@ class State:
         self.sidefront[1][1], var2 = var2, self.sidefront[1][1]
         self.sidefront[2][1], var3 = var3, self.sidefront[2][1]
 
-        var1 = self.sideright[0][0];
-        var2 = self.sideright[0][1];
-        var3 = self.sideright[0][2];
 
-        self.sideright[2][0], var1 = var1, self.sideright[0][2];
-        self.sideright[1][0], var2 = var2, self.sideright[1][2];
-        self.sideright[0][0], var3 = var3, self.sideright[2][2];
 
-        self.sideright[2][2], var1 = var1, self.sideright[2][2];
-        self.sideright[2][1], var2 = var2, self.sideright[2][1];
-        self.sideright[2][0], var3 = var3, self.sideright[2][0];
+    def move_right_up(self):
 
-        self.sideright[2][2], var1 = var1, self.sideright[2][2];
-        self.sideright[1][2], var2 = var2, self.sideright[1][2];
-        self.sideright[0][2], var3 = var3, self.sideright[0][2];
+        var1 = self.sidefront[0][0]
+        var2 = self.sidefront[0][1]
+        var3 = self.sidefront[0][2]
 
-        self.sideright[0][2], var1 = var1, self.sideright[0][2];
-        self.sideright[0][1], var2 = var2, self.sideright[0][1];
-        self.sideright[0][0], var3 = var3, self.sideright[0][0];
+        self.sideright[0][0], var1 = var1, self.sideright[0][0]
+        self.sideright[0][1], var2 = var2, self.sideright[0][1]
+        self.sideright[0][2], var3 = var3, self.sideright[0][2]
+
+        self.sideback[0][0], var1 = var1, self.sideback[0][0]
+        self.sideback[0][1], var2 = var2, self.sideback[0][1]
+        self.sideback[0][2], var3 = var3, self.sideback[0][2]
+
+        self.sideleft[0][0], var1 = var1, self.sideleft[0][0]
+        self.sideleft[0][1], var2 = var2, self.sideleft[0][1]
+        self.sideleft[0][2], var3 = var3, self.sideleft[0][2]
+
+        self.sidefront[0][0], var1 = var1, self.sidefront[0][0]
+        self.sidefront[0][1], var2 = var2, self.sidefront[0][1]
+        self.sidefront[0][2], var3 = var3, self.sidefront[0][2]
+
+        var1 = self.sideup[0][0];
+        var2 = self.sideup[0][1];
+        var3 = self.sideup[0][2];
+        var4 = self.sideup[1][0];
+        var5 = self.sideup[1][1];
+        var6 = self.sideup[1][2];
+        var7 = self.sideup[2][0];
+        var8 = self.sideup[2][1];
+        var9 = self.sideup[2][2];
+
+        self.sideup[0][2], var1 = var1, self.sideup[0][2];
+        self.sideup[0][1], var2 = var2, self.sideup[0][1];
+        self.sideup[0][0], var3 = var3, self.sideup[0][0];
+
+        self.sideup[1][2], var4 = var4, self.sideup[1][2];
+        self.sideup[1][1], var5 = var5, self.sideup[1][1];
+        self.sideup[1][0], var6 = var6, self.sideup[1][0];
+
+        self.sideup[2][2], var7 = var7, self.sideup[2][2];
+        self.sideup[2][1], var8 = var8, self.sideup[2][1];
+        self.sideup[2][0], var9 = var9, self.sideup[2][0];
+
+
+
+    def move_right_down(self):
+        var1 = self.sidefront[2][0]
+        var2 = self.sidefront[2][1]
+        var3 = self.sidefront[2][2]
+
+        self.sideright[2][0], var1 = var1, self.sideright[2][0]
+        self.sideright[2][1], var2 = var2, self.sideright[2][1]
+        self.sideright[2][2], var3 = var3, self.sideright[2][2]
+
+        self.sideback[2][1], var1 = var1, self.sideback[2][0]
+        self.sideback[2][1], var2 = var2, self.sideback[2][1]
+        self.sideback[2][2], var3 = var3, self.sideback[2][2]
+
+        self.sideleft[2][0], var1 = var1, self.sideleft[2][0]
+        self.sideleft[2][1], var2 = var2, self.sideleft[2][1]
+        self.sideleft[2][2], var3 = var3, self.sideleft[2][2]
+
+        self.sidefront[2][0], var1 = var1, self.sidefront[2][0]
+        self.sidefront[2][1], var2 = var2, self.sidefront[2][1]
+        self.sidefront[2][2], var3 = var3, self.sidefront[2][2]
+
+        var1 = self.sidedown[0][0];
+        var2 = self.sidedown[0][1];
+        var3 = self.sidedown[0][2];
+        var4 = self.sidedown[1][0];
+        var5 = self.sidedown[1][1];
+        var6 = self.sidedown[1][2];
+        var7 = self.sidedown[2][0];
+        var8 = self.sidedown[2][1];
+        var9 = self.sidedown[2][2];
+
+        self.sidedown[0][0], var7 = var7, self.sidedown[0][0];
+        self.sidedown[0][1], var8 = var8, self.sidedown[0][1];
+        self.sidedown[0][2], var9 = var9, self.sidedown[0][2];
+
+        self.sidedown[1][0], var4 = var4, self.sidedown[1][0];
+        self.sidedown[1][1], var5 = var5, self.sidedown[1][1];
+        self.sidedown[1][2], var6 = var6, self.sidedown[1][2];
+
+        self.sidedown[2][0], var1 = var1, self.sidedown[2][0];
+        self.sidedown[2][1], var2 = var2, self.sidedown[2][1];
+        self.sidedown[2][2], var3 = var3, self.sidedown[2][2];
+
+
+    def move_right_middle(self):
+        var1 = self.sidefront[1][0]
+        var2 = self.sidefront[1][1]
+        var3 = self.sidefront[1][2]
+
+        self.sideright[1][0], var1 = var1, self.sideright[1][0]
+        self.sideright[1][1], var2 = var2, self.sideright[1][1]
+        self.sideright[1][2], var3 = var3, self.sideright[1][2]
+
+        self.sideback[1][0], var1 = var1, self.sideback[1][0]
+        self.sideback[1][1], var2 = var2, self.sideback[1][1]
+        self.sideback[1][2], var3 = var3, self.sideback[1][2]
+
+        self.sideleft[1][0], var1 = var1, self.sideleft[1][0]
+        self.sideleft[1][1], var2 = var2, self.sideleft[1][1]
+        self.sideleft[1][2], var3 = var3, self.sideleft[1][2]
+
+        self.sidefront[1][0], var1 = var1, self.sidefront[1][0]
+        self.sidefront[1][1], var2 = var2, self.sidefront[1][1]
+        self.sidefront[1][2], var3 = var3, self.sidefront[1][2]
+
+
 
 
 state1 = State()
