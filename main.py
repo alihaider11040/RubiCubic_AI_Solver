@@ -344,19 +344,12 @@ state1 = State()
 state1.print_()
 state1.move_down_left()
 state1.print_()
-graph = {
-  '5' : ['3','7'],
-  '3' : ['2', '4'],
-  '7' : ['8'],
-  '2' : [],
-  '4' : ['8'],
-  '8' : []
-}
+
 
 visited = [] # List for visited nodes.
 queue = []     #Initialize a queue
 
-def bfs(visited, graph,state1 ): #function for BFS
+def bfs( ): #function for BFS
   visited.append(state1)
   queue.append(state1)
 
